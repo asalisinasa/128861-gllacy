@@ -1,0 +1,45 @@
+////////////////////// VARIABLES ////////////////////////
+
+// font
+$font-size: 16px;
+$font-family: Roboto, Arial, Helvetica, sans-serif;
+
+// colors
+$white: #fff;
+$brown: #323;
+
+
+////////////////////// STYLES //////////////////////////
+
+body {
+	color: $white;
+	
+	font-family: $font-family;
+    font-size: $font-size;
+    line-height: $font-size/0.7;
+}
+h1 {
+	color: $white;
+	
+	font-family: $font-family;
+    font-size: $font-size*3.75;
+    font-weight: bold;
+    line-height: 1.2;
+}
+h2 {
+	color: $white;
+	
+	font-family: $font-family;
+    font-size: $font-size*2.1875;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+h3 {
+	color: $brown;
+	
+	font-family: $font-family;
+    font-size: $font-size*1.5;
+    font-weight: bold;
+    line-height: 1.25;
+}

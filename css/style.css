@@ -1,0 +1,30 @@
+body {
+  color: #fff;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 22.85714px;
+}
+
+h1 {
+  color: #fff;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h2 {
+  color: #fff;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h3 {
+  color: #323;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+}
