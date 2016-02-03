@@ -10,8 +10,7 @@
 
 
   <body>
-  <!-- убрать карту из контейнера -->
-      <header class="main-header  container  learfix">
+      <header class="main-header">
         <div class="main-header__logo">
           <img  src="img/logo.svg"  alt="Glacy магазин мороженого"  class="main-header__img"  width="154"  height="64">
         </div>
@@ -104,19 +103,16 @@
               </div>
             </div>
           </div>
-        </div>
 
         <div class="main-header__contacts">
           <p class="main-header__hours">C 10 до 20, ежедневно</p>
-          1
-<!-- <a href="tel:+73412475234">+7 (3412) 47-52-34 </a> -->
-          <p class="main-header__tel">8 812 450 25 25</p>
+          <a href="tel:+78124502525">8 812 450 25 25</a>
         </div> 
       </header>
       
-      <section class="slider  container">
+      <section class="slider">
         <form action="#" method="get">
-          <input class="slider__input"  type="radio"  name="switch"  id="slider__item--1" checked="">
+          <input class="slider__input"  type="radio"  name="switch"  id="slider__item--1" checked>
           <input class="slider__input"  type="radio"  name="switch"  id="slider__item--2">
           <input class="slider__input"  type="radio"  name="switch"  id="slider__item--3">
 
@@ -126,31 +122,35 @@
             <label class="slider__controls"  for="slider__item--3"></label>
           </div>
         </form>
-          
-        <div class="slider__item  slider__item--1  slider__item--active">
-          <div class="slider__descript">
-            <h1 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h1>
-            <a href="#" class="slider__btn btn--red">Давайте оба!</a>
-          </div>
-        </div>
+        
+        <div class="slider__inner">
+          <div class="slider__items">
+            <div class="slider__item  slider__item--1  slider__item--active">
+              <div class="slider__descript">
+                <h1 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h1>
+                <a href="#" class="slider__btn btn--red">Давайте оба!</a>
+              </div>
+            </div>
 
-        <div class="slider__item  slider__item--2">
-          <div class="slider__descript">
-            <h1 class="slider__title">Шоколадный пломбир и лимонный сорбет</h1>
-            <a href="#" class="slider__btn btn--red">Давайте оба!</a>
-          </div>
-        </div>
+            <div class="slider__item  slider__item--2">
+              <div class="slider__descript">
+                <h1 class="slider__title">Шоколадный пломбир и лимонный сорбет</h1>
+                <a href="#" class="slider__btn btn--red">Давайте оба!</a>
+              </div>
+            </div>
 
-        <div class="slider__item  slider__item--3">
-          <div class="slider__descript">
-            <h1 class="slider__title">Пломбир с помадкой и клубничный щербет</h1>
-            <a href="#" class="slider__btn btn--red">Давайте оба!</a>
+            <div class="slider__item  slider__item--3">
+              <div class="slider__descript">
+                <h1 class="slider__title">Пломбир с помадкой и клубничный щербет</h1>
+                <a href="#" class="slider__btn btn--red">Давайте оба!</a>
+              </div>
+            </div>
           </div>
-        </div>
+        </div>  
       </section>
 
-      <main class="main-content">
-        <div class="bunners  container  clearfix">
+      <main class="main-index">
+        <div class="bunners">
           <div class="bunner  bunner__raspberry">
             <h2 class="bunner__title">Малинка даром!</h2>
             <p class="bunner__text">
@@ -169,13 +169,14 @@
         </div>
 
 
-        <div class="popular  container  clearfix">
+        <div class="popular">
           <article class="catalog-item popular__hit">
             <img class="catalog-item__img" src="img/content/icecream_orange-jam_267x267.png" alt="Сливочное мороженое с апельсиновым джемом"  width="200"  height="200">
             <div class="catalog-item__price">310&#8381;/кг</div>
             <a href="#" class="catalog-item__link">
               <h4 class="catalog-item__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h4>
             </a>
+            <a href="#" class="catalog-item__btn  btn--red">Быстрый просмотр</a>
           </article>
 
           <article class="catalog-item popular__hit">
@@ -184,6 +185,7 @@
             <a href="#" class="catalog-item__link">
               <h4 class="catalog-item__title">Сливочно-кофейное с кусочками шоколада</h4>
             </a>
+            <a href="#" class="catalog-item__btn  btn--red">Быстрый просмотр</a>
           </article>
 
           <article class="catalog-item popular__hit">
@@ -192,6 +194,7 @@
             <a href="#" class="catalog-item__link">
               <h4 class="catalog-item__title">Сливочно-клубничное с присыпкой из белого шоколада</h4>
             </a>
+            <a href="#" class="catalog-item__btn  btn--red">Быстрый просмотр</a>
           </article>
 
           <article class="catalog-item popular__hit">
@@ -200,11 +203,12 @@
             <a href="#" class="catalog-item__link">
               <h4 class="catalog-item__title">Сливочное крем-брюле с карамельной подливкой</h4>
             </a>
+            <a href="#" class="catalog-item__btn  btn--red">Быстрый просмотр</a>
           </article>
         </div>
 
 
-        <div class="features  container">
+        <div class="features">
           <h3 class="features__title">
                                       Магазин Глейси&nbsp;&mdash; это онлайн и&nbsp;офлайн магазин 
                                       по&nbsp;продаже мороженого собственного производства на&nbsp;развес
@@ -229,7 +233,7 @@
         </div>
 
 
-        <div class="bunners  container  clearfix">
+        <div class="bunners">
           <div class="bunner  bunner__blog">
             <img src="http://placehold.it/400x250" alt="Cервировкf фруктовых щербетов" width="400" height="250">
             <p class="blog__text">Новое в нашем блоге</p>
@@ -278,26 +282,25 @@
         <div class="main-footer__info">
           <ul>
             <li  class="main-footer__info-item  main-footer__info-item--highlighted">
-              <a href="#"  class="main-footer__info-link">Для поставщиков</a>
+              <a href="#">Для поставщиков</a>
             </li><!--
          --><li>
-              <a href="#"  class="main-footer__info-link">Наши документы</a>
+              <a href="#">Наши документы</a>
             </li><!--
          --><li>
-              <a href="#"  class="main-footer__info-link">О производстве</a>
+              <a href="#">О производстве</a>
             </li><!--
          --><li>
-              <a href="#"  class="main-footer__info-link">Экологические стандарты</a>
+              <a href="#">Экологические стандарты</a>
             </li>
           </ul>
         </div>
 
         <div class="main-footer__copyright">
           <a href="https://htmlacademy.ru"  class="copyright__logo">
-            <img class="copyright__img"  src="img/icon/icon-htmlacademy-logo.png"  alt="HTML Academy"  width="108" height="37">
+            <img class="copyright__img"  src="img/icon/icon-htmlacademy-logo.svg"  alt="HTML Academy"  width="108" height="37">
           </a>
-          <p class="copyright__text">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>&copy; 2016</p>
-        </div>
+          <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>&copy; 2016</p>
         </div>
       </footer>
     

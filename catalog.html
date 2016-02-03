@@ -10,8 +10,7 @@
 
 
   <body>
-    <div class="container">
-      <header class="main-header">
+    <header class="main-header">
         <div class="main-header__logo">
           <a href="index.html">
             <img  src="img/logo.svg"  alt="Glacy магазин мороженого"  class="main-header__img"  width="154"  height="64">
@@ -21,8 +20,8 @@
 
         <nav class="main-nav">
           <ul class="main-nav__menu">
-            <li class="main-nav__item  main-nav__item--active">
-              <a href="#">Каталог</a>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог</a>
 
               <div class="sub-menu">
                 <ul>
@@ -62,6 +61,7 @@
                 <input  class="user-block__search-form"  type="search"  name="search"  value=""  placeholder="Что ищем?"  id="search">
               </form>
             </div>
+          </div>
 
             <div class="user-block__element  user-block__element--login">
               <a href="#" class="user-block__btn  user-block__btn--login  btn--transparent">Вход</a>
@@ -72,18 +72,17 @@
                   <input class="user-block__password"  type="password"  name="password"  placeholder="Пароль"  required>
                   <input  class="user-block__btn"  type="submit"  name="submit"  value="Войти">
                 </form>
-              </div>
-              
 
-              <div class="user-block__support">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
+                <div class="user-block__support">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
               </div>
             </div>
 
             <div class="user-block__element  user-block__element--basket">
               <a href="#" class="user-block__btn  user-block__btn--basket  btn--transparent">Пусто</a>
-              
+
               <div class="user-block__popup  user-block__popup--basket">
                 <table class="user-block__basket-table">
                   <tr>
@@ -100,36 +99,33 @@
                     <td>450 руб.</td>
                   </tr>
                 </table>
-              </div>
-              
 
-              <b>Итого: 750р.</b>
-              <a href="#">Оформить заказ</a>
+                <b>Итого: 750р.</b>
+                <a href="#">Оформить заказ</a>
+              </div>
             </div>
           </div>
-        </div>
 
         <div class="main-header__contacts">
           <p class="main-header__hours">C 10 до 20, ежедневно</p>
-          <p class="main-header__tel">8 812 450 25 25</p>
-        </div>
+          <a href="tel:+78124502525">8 812 450 25 25</a>
+        </div> 
       </header>
 
 
-      <main class="main-content">
-        <header class="content-header">
-          <ul class="content-header__breadcrumbs">
-            <li class="content-header__item">
+      <main class="main-catalog">
+        <header class="catalog-header">
+          <ul class="catalog-header__breadcrumbs">
+            <li class="catalog-header__item">
               <a href="#">Главная</a>
             </li><!--
-         --><li class="content-header__item">
+         --><li class="catalog-header__item">
               <a href="#">Каталог</a>
             </li><!--
-         --><li class="content-header__item  content-header__item--active">
-              <a href="#">Сливочное</a>
+         --><li class="catalog-header__item  catalog-header__item--active">Сливочное
             </li>
           </ul>
-          <h1 class="content-header__title">Сливочное мороженое</h1>
+          <h1 class="catalog-header__title">Сливочное мороженое</h1>
         </header>
         
         <div class="search-options">
@@ -200,7 +196,7 @@
         
         <div class="catalog">
           <article class="catalog-item">
-            <img class="catalog-item__img" src="img/content/icecream_orange-jam_267x267.png" alt="Сливочное мороженое с апельсиновым джемом"  width="200"  height="200">
+            <img class="catalog-item__img" src="img/content/icecream_orange-jam_267x267.png" alt="Сливочное мороженое с апельсиновым джемом">
             <div class="catalog-item__price">310&#8381;/кг</div>
             <a href="#" class="catalog-item__link">
               <h4 class="catalog-item__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h4>
@@ -310,13 +306,13 @@
 
         <div class="pagination">
           <ul>
-            <li><a class="pagination__btn  pagination__btn--arrow  pagination__btn--disabled" href="#">Стрелка</a></li><!--
-         --><li><a class="pagination__btnpagination__btn" href="#">1</a></li><!--
-         --><li><a class="pagination__btn pagination__btn--active" href="#">2</a></li><!--
-         --><li><a class="pagination__btn" href="#">3</a></li><!--
-         --><li><a class="pagination__btn" href="#">4</a></li><!--
-         --><li><a class="pagination__btn" href="#">5</a></li><!--
-         --><li><a class="pagination__btn  pagination__btn--arrow" href="#">Стрелка</a></li>
+            <li class="pagination__btn  pagination__btn--arrow  pagination__btn--disabled"><a href="#">&#60;</a></li><!--
+         --><li class="pagination__btn  pagination__btn--active"><a href="#">1</a></li><!--
+         --><li class="pagination__btn"><a href="#">2</a></li><!--
+         --><li class="pagination__btn  pagination__btn"><a href="#">3</a></li><!--
+         --><li class="pagination__btn  pagination__btn"><a href="#">4</a></li><!--
+         --><li class="pagination__btn  pagination__btn"><a href="#">5</a></li><!--
+         --><li class="pagination__btn  pagination__btn"><a href="#">&#62;</a></li>
           </ul>
         </div>
       </main>
@@ -333,28 +329,27 @@
         <div class="main-footer__info">
           <ul>
             <li  class="main-footer__info-item  main-footer__info-item--highlighted">
-              <a href="#"  class="main-footer__info-link">Для поставщиков</a>
+              <a href="#">Для поставщиков</a>
             </li><!--
-         --><li>
-              <a href="#"  class="main-footer__info-link">Наши документы</a>
+         --><li class="main-footer__info-item">
+              <a href="#">Наши документы</a>
             </li><!--
-         --><li>
-              <a href="#"  class="main-footer__info-link">О производстве</a>
+         --><li class="main-footer__info-item">
+              <a href="#">О производстве</a>
             </li><!--
-         --><li>
-              <a href="#"  class="main-footer__info-link">Экологические стандарты</a>
+         --><li class="main-footer__info-item">
+              <a href="#">Экологические стандарты</a>
             </li>
           </ul>
         </div>
 
         <div class="main-footer__copyright">
           <a href="https://htmlacademy.ru"  class="copyright__logo">
-            <img class="copyright__img"  src="img/icon/icon-htmlacademy-logo.png"  alt="HTML Academy"  width="108" height="37">
+            <img class="copyright__img"  src="img/icon/icon-htmlacademy-logo.svg"  alt="HTML Academy"  width="108" height="37">
           </a>
-          <p class="copyright__text">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>&copy; 2016</p>
+          <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>&copy; 2016</p>
         </div>
       </footer>
-    </div>
   </body>
   
 </html>
