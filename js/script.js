@@ -1,30 +1,19 @@
-//////////////////// GoogleMaps ///////////////////////////////
+//////////////////// Textarea ///////////////////////////////
 ///////////////////////////////////////////////////////////////
+var textarea = document.querySelectorAll(".textarea");
 
-var mapCanvas = document.querySelector(".contacts__map");
-function initialize() {     
-  var centerMap = new google.maps.LatLng(59.939870, 30.318591);
-  var initZoom = 16;
-  var mapOptions = {
-    center: centerMap,
-    zoom: initZoom,
-    maxZoom: 18,
-    minZoom: 8,
-    scrollwheel: false,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  }
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var image = {
-    url: "../img/icon/map-pin.png",
-    anchor: new google.maps.Point(51, 190)
-  };
-    var markPos = new google.maps.LatLng(59.938840, 30.323056);
-  var marker = new google.maps.Marker({
-    position: markPos,
-    icon: image,
-    map: map
-  });
-};
+for (var i = 0; i < textarea.length; i++) {
+  textarea[i].addEventListener("focusout", function(event) {
+    var elem = this;
+    var placeholder = this.nextElementSibling;
+    var form_hint = placeholder.firstElementChild;
+    if(elem.value.length == 0) {
+      form_hint.classList.remove("lostfocus");
+    } else {
+      form_hint.classList.add("lostfocus");
+    }
+  }, false);
+}
 
 
 
