@@ -268,7 +268,7 @@ h3 {
   line-height: 24px;
   color: #999999;
   -webkit-transition: 0.2s ease all;
-  transition: 0.2s ease all;
+          transition: 0.2s ease all;
 }
 
 .lostfocus {
@@ -725,11 +725,13 @@ h3 {
 
 .basket__btn--delete::after {
   -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 .basket__btn--delete::before {
   -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
@@ -779,7 +781,7 @@ h3 {
   background-repeat: no-repeat;
   background-position: 50% 0;
   -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
 }
 
 .index-background::before,
@@ -1393,11 +1395,12 @@ h3 {
 }
 
 .search-options__btn:active {
-  padding: 8px 29px;
+  padding: 0 29px;
   border: none;
   background-color: #EAEAEA;
   color: #363636;
   box-shadow: inset 0 2px 1px #696969;
+  line-height: 36px;
 }
 
 .search-options input[type="radio"],
@@ -1605,6 +1608,7 @@ h3 {
   border-right: 3px solid transparent;
   border-bottom: 3px solid transparent;
   -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
@@ -1959,11 +1963,13 @@ h3 {
 
 .feedback-form__btn--close::after {
   -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 .feedback-form__btn--close::before {
   -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
