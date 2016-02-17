@@ -6,7 +6,7 @@
     <title>Глейси: Главная</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
 
@@ -58,12 +58,12 @@
 
         <symbol id="icon-arrow-right" viewBox="0 0 619 1024">
           <title>icon-arrow-right</title>
-            <path fill="currentColor" class="path1" d="M514.394 617.841l-0.15-0.224-407.431 407.431-105.841-105.766 407.431-407.431-406.907-406.907 105.766-105.766 512.972 512.898-105.841 105.766z"></path>
+          <path fill="currentColor" class="path1" d="M514.394 617.841l-0.15-0.224-407.431 407.431-105.841-105.766 407.431-407.431-406.907-406.907 105.766-105.766 512.972 512.898-105.841 105.766z"></path>
         </symbol>
 
         <symbol id="icon-arrow-left" viewBox="0 0 618 1024">
           <title>icon-arrow-left</title>
-            <path fill="currentColor" class="path1" d="M617.012 105.236l-406.54 406.54 406.017 406.017-105.535 105.535-511.776-511.776 105.535-105.535 0.224 0.149 406.54-406.465 105.535 105.535z"></path>
+          <path fill="currentColor" class="path1" d="M617.012 105.236l-406.54 406.54 406.017 406.017-105.535 105.535-511.776-511.776 105.535-105.535 0.224 0.149 406.54-406.465 105.535 105.535z"></path>
         </symbol>
 
         <symbol id="icon-vk" viewBox="0 0 1023 1024">
@@ -96,7 +96,7 @@
     </svg>
 
     
-    <!-- Переключатели слайдера -->
+    <!-- slider toggles -->
     <input class="toggle toggle--1" type="radio" id="toggle--1" name="toggle" checked>
     <input class="toggle toggle--2" type="radio" id="toggle--2" name="toggle">
     <input class="toggle toggle--3" type="radio" id="toggle--3" name="toggle">
@@ -218,7 +218,7 @@
               </a>
               
               <!-- basket popup -->
-              <!-- <div class="user-block__popup  user-block__popup--basket">
+              <div class="user-block__popup  user-block__popup--basket">
 
                 <table class="basket__table">
 
@@ -268,9 +268,9 @@
                   
 
                 <p class="basket__summary"><b>Итого: 750 руб.</b></p> 
-                <a class="btn--red  basket__submit" href="#">Оформить заказ</a>
+                <a class="btn--red  basket__btn" href="#">Оформить заказ</a>
 
-              </div> -->
+              </div>
 
             </div>   
 
@@ -476,7 +476,7 @@
               
 
               <div class="features__item">
-                  <svg class="features__icon" width="50" height="50"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-thermometer"></use></svg>
+                  <svg class="features__icon" width="50" height="50"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cow"></use></svg>
                   <p class="features__text">
                                             Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств и&nbsp;компаний, 
                                             с&nbsp;которыми нас связывает долговременное сотрудничество.
@@ -488,13 +488,13 @@
                   <svg class="features__icon" width="50" height="50"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-leaf"></use></svg>
                   <p class="features__text">
                                             Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего 
-                                            качества. Все дополнительные ингредиенты произведены из&nbsp;натурального, экологически чистого сырья.
+                                            качества. Все дополнительные ингредиенты и добавки произведены из&nbsp;натурального, экологически чистого сырья.
                   </p>
               </div>
               
 
               <div class="features__item">
-                  <svg class="features__icon" width="50" height="50"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cow"></use></svg>
+                  <svg class="features__icon" width="50" height="50"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-thermometer"></use></svg>
                   <p class="features__text">
                                             Доставка нашего мороженого до&nbsp;заказчиков осуществляется в&nbsp;специальном термопаке, 
                                             которая не&nbsp;дает мороженому растаять в&nbsp;пути и&nbsp;позволяет ему сохранить свой превосходный вкус.
@@ -516,20 +516,22 @@
           <div class="bunners">
 
             <div class="bunner  bunner__left  bunner-blog">
+
               <div class="bunner-blog__inner">
                 <p class="bunner-blog__descript">Новое в нашем блоге</p>
                 
                   <h5 class="bunner-blog__title">
                     <a href="#">10&nbsp;способов сервировки фруктовых щербетов к&nbsp;столу</a>
                   </h5>
-                
               </div>
 
               <img class="bunner-blog__img" src="img/background/bg-strawberry.jpg" alt="Cервировка фруктовых щербетов" width="420" height="220">
+
             </div>
 
 
             <div class="bunner  bunner__right  bunner-subscript">
+
               <div class="bunner-subscript__inner">
                 <p>
                                     Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить 
@@ -537,18 +539,18 @@
 
                 <div class="bunner-subscript__form">
                   <form action="#" method="post">
-                    <div class="bunner-subscript__email--wrapp">
+                    <input class="bunner-subscript__btn btn--red" type="submit" value="Отправить">
+                    <div class="bunner-subscript__email--wrap">
                       <input class="bunner-subscript__email textarea" type="email" id="bunner-subscript__email">
                       <div class="placeholder">
                         <label for="bunner-subscript__email" class="form-hint">Электронная почта</label>
                       </div>
                     </div>
-                     
-                    <input class="bunner-subscript__btn btn--red" type="submit" value="Отправить">
                   </form> 
                 </div>
                 
               </div>
+
             </div>
 
           </div>
@@ -578,7 +580,7 @@
                                                     (с 10 до 20 ежедневно)
               </p>
 
-              <a class="adress-block__btn  btn--red" href="feedback.html">Форма обратной связи</a>
+              <a class="adress-block__btn  btn--red" href="feedback.html" target="_blank">Форма обратной связи</a>
 
             </div>
 
@@ -596,7 +598,7 @@
         
         <footer class="main-footer  clearfix">
 
-          <div class="main-footer__social">
+          <div class="main-footer__social main-footer__social--index">
             <a href="#"  class="social__link" title="Мы в Twitter">
               <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
             </a>
@@ -612,7 +614,7 @@
           </div>
 
 
-          <div class="main-footer__info">
+          <div class="main-footer__info main-footer__info--index">
             <ul>
               <li>
                 <svg class="main-footer__info-icon" width="15" height="13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use></svg>
@@ -634,11 +636,11 @@
 
           <div class="main-footer__copyright">
 
-            <a href="https://htmlacademy.ru"  class="copyright__logo">
+            <a href="https://htmlacademy.ru"  class="copyright__logo" target="_blank">
               <img class="copyright__img" src="img/logo/logo-htmlacademy.png" alt="HTML academy" width="108" height="37">
             </a>
 
-            <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>&copy; 2016</p>
+            <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>&copy; 2016</p>
 
           </div>
 
@@ -683,8 +685,9 @@
     </div>
     <!-- end feedback-form -->
     
-    <script src="js/script.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=ON5h-TjftL0PH4Al54mWabH_V998vWcS&width=100%&height=430&id=yandex-map&lang=ru_RU&sourceType=constructor"></script>
+    <script src="js/script.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=ON5h-TjftL0PH4Al54mWabH_V998vWcS&&height=430&id=yandex-map&lang=ru_RU&sourceType=constructor"></script>
+    
   </body>
 
 </html>

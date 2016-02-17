@@ -6,7 +6,7 @@
     <title>Глейси: Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
 
@@ -98,352 +98,354 @@
     
     <div class="catalog-background">
 
-    <!-- begin header -->
-    <div class="main-header__wrap">
-      
-      <header class="main-header">
-
-        <div class="main-header__logo">
-
-          <a href="index.html">
-            <img class="main-header__img" src="img/logo/logo-gllacy.png" alt="Глейси магазин мороженого" width="154" height="64">
-          </a>
-          
-        </div>
-
-
-        <nav class="main-nav">
-
-          <ul class="main-nav__menu">
-
-            <li class="main-nav__item  main-nav__item--dropdown  main-nav__item--current">
-              <a href="catalog.html">Каталог</a>
-
-              <div class="sub-menu">
-                <ul>
-                  <li class="sub-menu__item">
-                    <a href="#">Новинки</a>
-                  </li><!--
-               --><li class="sub-menu__item  sub-menu__item--current">
-                    <a href="catalog.html">Сливочное</a>
-                  </li><!--
-               --><li class="sub-menu__item">
-                    <a href="#">Щербеты</a>
-                  </li><!--
-               --><li class="sub-menu__item">
-                    <a href="#">Фруктовый лед</a>
-                  </li><!--
-               --><li class="sub-menu__item">
-                    <a href="#">Мелорин</a>
-                  </li>
-                </ul>
-              </div>
-
-            </li><!--
-         --><li class="main-nav__item">
-              <a href="#">Доставка и оплата</a>
-            </li><!--
-         --><li class="main-nav__item">
-              <a href="#">О Компании</a>
-            </li>
-          </ul>
-        </nav>
-
+      <!-- begin header -->
+      <div class="main-header__wrap">
         
+        <header class="main-header">
 
-        <!-- begin user-block -->
-        <div class="user-block">
+          <div class="main-header__logo">
+
+            <a href="index.html">
+              <img class="main-header__img" src="img/logo/logo-gllacy.png" alt="Глейси магазин мороженого" width="154" height="64">
+            </a>
             
-          <!-- search -->
-          <div class="user-block__element">
-
-            <a href="#" class="user-block__btn  user-block__btn--search">
-              <svg class="user-block__btn--icon" width="17" height="17"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>
-            </a> 
-              
-            <!-- search popup -->
-            <div class="user-block__popup  user-block__popup--search">
-              <form action="#" method="get">
-                <input  class="search__text-field textarea"  type="search"  name="search"  value=""  id="search">
-                <div class="placeholder">
-                    <label for="search" class="form-hint">Что ищем?</label>
-                </div>
-              </form>
-            </div>
-
           </div>
 
 
-          <!-- login -->
-          <div class="user-block__element">
+          <nav class="main-nav">
 
-            <a href="#" class="user-block__btn  user-block__btn--login">
-              <svg class="user-block__btn--icon" width="21" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-login"></use></svg>
-                Вход
-            </a>
+            <ul class="main-nav__menu">
+
+              <li class="main-nav__item  main-nav__item--dropdown  main-nav__item--current">
+                <a href="catalog.html">Каталог</a>
+
+                <div class="sub-menu">
+                  <ul>
+                    <li class="sub-menu__item">
+                      <a href="#">Новинки</a>
+                    </li><!--
+                 --><li class="sub-menu__item  sub-menu__item--current">
+                      <a href="catalog.html">Сливочное</a>
+                    </li><!--
+                 --><li class="sub-menu__item">
+                      <a href="#">Щербеты</a>
+                    </li><!--
+                 --><li class="sub-menu__item">
+                      <a href="#">Фруктовый лед</a>
+                    </li><!--
+                 --><li class="sub-menu__item">
+                      <a href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
+
+              </li><!--
+           --><li class="main-nav__item">
+                <a href="#">Доставка и оплата</a>
+              </li><!--
+           --><li class="main-nav__item">
+                <a href="#">О Компании</a>
+              </li>
+            </ul>
+          </nav>
+
+          
+
+          <!-- begin user-block -->
+          <div class="user-block">
               
-            <!-- login popup -->
-            <div class="user-block__popup  user-block__popup--login">
-              <form action="#" method="get">
-                <input class="textarea"  type="email"  name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  id="login__e-mail" required>
-                <div class="placeholder">
-                  <label for="login__e-mail" class="form-hint">Электронная почта</label>
-                </div>
+            <!-- search -->
+            <div class="user-block__element">
 
-                <input class="textarea"  type="password"  name="password"  id="login__password" required >
-                <div class="placeholder">
-                  <label for="login__password" class="form-hint">Пароль</label>
-                </div>
-
-                <input  class="btn--red  login__btn"  type="submit"  name="submit"  value="Войти">
-              </form>
-
-              <div class="login__support">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
+              <a href="#" class="user-block__btn  user-block__btn--search">
+                <svg class="user-block__btn--icon" width="17" height="17"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use></svg>
+              </a> 
+                
+              <!-- search popup -->
+              <div class="user-block__popup  user-block__popup--search">
+                <form action="#" method="get">
+                  <input  class="search__text-field textarea"  type="search"  name="search"  value=""  id="search">
+                  <div class="placeholder">
+                      <label for="search" class="form-hint">Что ищем?</label>
+                  </div>
+                </form>
               </div>
-            </div>
-
-          </div>
-        
-
-
-          <!-- basket -->
-          <div class="user-block__element">
-
-            <a href="#" class="user-block__btn user-block__btn--basket basket-filled">
-              <svg class="user-block__btn--icon" width="21" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-basket"></use></svg>
-              <svg class="user-block__btn--icon" width="15" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-basket-filled"></use></svg>
-              2 товара
-            </a>
-              
-            <!-- basket popup -->
-            <div class="user-block__popup  user-block__popup--basket">
-
-              <table class="basket__table">
-
-                <tr class="basket__row">
-
-                  <td class="basket__cell">
-                    <button class="basket__btn--delete"></button>
-                  </td>
-
-                  <td class="basket__cell">
-                    <img src="img/content/miniature-icecream-orange_jam.png" alt="Сливочное мороженое с апельсиновым джемомй" width="33" height="33">
-                  </td>
-
-                  <td class="basket__cell">Пломбир с&nbsp;апельсиновым джемом</td>
-
-                  <td class="basket__cell">
-                    <b class="basket--bold">1,5 кг</b> x 200 руб.
-                  </td>
-
-                  <td class="basket__cell">300 руб.</td>
-
-                </tr>
-
-
-                <tr class="basket__row">
-
-                  <td class="basket__cell">
-                    <button class="basket__btn--delete"></button>
-                  </td>
-
-                  <td class="basket__cell">
-                    <img src="img/content/miniature-icecream-strawb_choc.png" alt="Сливочно-клубничное мороженое" width="33" height="33">
-                  </td>
-
-                  <td class="basket__cell">Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шокола</td>
-
-                  <td class="basket__cell">
-                      <b class="basket--bold">1,5 кг</b> x 300 руб.
-                  </td>
-
-                  <td class="basket__cell">450 руб.</td>
-
-                </tr>
-
-              </table>
-                  
-
-              <p class="basket__summary"><b>Итого: 750 руб.</b></p> 
-              <a class="btn--red  basket__submit" href="#">Оформить заказ</a>
 
             </div>
 
+
+            <!-- login -->
+            <div class="user-block__element">
+
+              <a href="#" class="user-block__btn  user-block__btn--login">
+                <svg class="user-block__btn--icon" width="21" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-login"></use></svg>
+                  Вход
+              </a>
+                
+              <!-- login popup -->
+              <div class="user-block__popup  user-block__popup--login">
+                <form action="#" method="get">
+                  <input class="textarea"  type="email"  name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  id="login__e-mail" required>
+                  <div class="placeholder">
+                    <label for="login__e-mail" class="form-hint">Электронная почта</label>
+                  </div>
+
+                  <input class="textarea"  type="password"  name="password"  id="login__password" required >
+                  <div class="placeholder">
+                    <label for="login__password" class="form-hint">Пароль</label>
+                  </div>
+
+                  <input  class="btn--red  login__btn"  type="submit"  name="submit"  value="Войти">
+                </form>
+
+                <div class="login__support">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </div>
+
+            </div>
+          
+
+
+            <!-- basket -->
+            <div class="user-block__element">
+
+              <a href="#" class="user-block__btn user-block__btn--basket basket-filled">
+                <svg class="user-block__btn--icon" width="21" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-basket"></use></svg>
+                <svg class="user-block__btn--icon" width="15" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-basket-filled"></use></svg>
+                2 товара
+              </a>
+                
+              <!-- basket popup -->
+              <div class="user-block__popup  user-block__popup--basket">
+
+                <table class="basket__table">
+
+                  <tr class="basket__row">
+
+                    <td class="basket__cell">
+                      <button class="basket__btn--delete"></button>
+                    </td>
+
+                    <td class="basket__cell">
+                      <img src="img/content/miniature-icecream-orange_jam.png" alt="Сливочное мороженое с апельсиновым джемомй" width="33" height="33">
+                    </td>
+
+                    <td class="basket__cell">Пломбир с&nbsp;апельсиновым джемом</td>
+
+                    <td class="basket__cell">
+                      <b class="basket--bold">1,5 кг</b> x 200 руб.
+                    </td>
+
+                    <td class="basket__cell">300 руб.</td>
+
+                  </tr>
+
+
+                  <tr class="basket__row">
+
+                    <td class="basket__cell">
+                      <button class="basket__btn--delete"></button>
+                    </td>
+
+                    <td class="basket__cell">
+                      <img src="img/content/miniature-icecream-strawb_choc.png" alt="Сливочно-клубничное мороженое" width="33" height="33">
+                    </td>
+
+                    <td class="basket__cell">Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шокола</td>
+
+                    <td class="basket__cell">
+                        <b class="basket--bold">1,5 кг</b> x 300 руб.
+                    </td>
+
+                    <td class="basket__cell">450 руб.</td>
+
+                  </tr>
+
+                </table>
+                    
+
+                <p class="basket__summary"><b>Итого: 750 руб.</b></p> 
+                <a class="btn--red  basket__btn" href="#">Оформить заказ</a>
+
+              </div>
+
+            </div>
+
           </div>
-
-        </div>
-        <!-- end user-block -->
+          <!-- end user-block -->
 
 
-        <!-- header contacts -->
-        <div class="main-header__contacts">
-          <p class="main-header__hours">C 10 до 20, ежедневно</p>
-          <a href="tel:+78124502525">8 812 450-25-25</a>
-        </div> 
-
-      </header>
-
-    </div>
-    <!-- end header -->
-
-
-    <!-- begin main -->
-    <div class="main-catalog__wrap">
-      
-      <main class="main-catalog">
-        
-
-        <!-- begin catalog-header -->
-        <header class="catalog-header">
-
-          <ul class="catalog-header__breadcrumbs">
-
-            <li class="catalog-header__item">
-              <a href="#">Главная</a>
-            </li><!--
-         --><li class="catalog-header__item">
-              <a href="#">Каталог</a>
-            </li><!--
-         --><li class="catalog-header__item">
-              <a href="#">Сливочное</a>
-            </li>
-          </ul>
-
-          <h1 class="catalog-header__title">Сливочное мороженое</h1>
+          <!-- header contacts -->
+          <div class="main-header__contacts">
+            <p class="main-header__hours">C 10 до 20, ежедневно</p>
+            <a href="tel:+78124502525">8 812 450-25-25</a>
+          </div> 
 
         </header>
-        <!-- end catalog-header -->
+
+      </div>
+      <!-- end header -->
+
+
+      <!-- begin main -->
+      <div class="main-catalog__wrap">
         
-        
-        <!-- begin search-options -->
-        <div class="search-options">
+        <main class="main-catalog">
+          
 
-          <form action="#" method="get">
+          <!-- begin catalog-header -->
+          <div class="catalog-header__wrap">
+            <header class="catalog-header">
 
-            <div class="search-options__filter">
+              <ul class="catalog-header__breadcrumbs">
 
-              <h5 class="search-options__title">Сортировка:</h5>
-              
-              <div class="filter-sorting__wrap">
+                <li class="catalog-header__item">
+                  <a href="#">Главная</a>
+                </li><!--
+             --><li class="catalog-header__item">
+                  <a href="#">Каталог</a>
+                </li><!--
+             --><li class="catalog-header__item">
+                  <a href="#">Сливочное</a>
+                </li>
+              </ul>
 
-                <select class="filter-sorting"  name="sort">
+              <h1 class="catalog-header__title">Сливочное мороженое</h1>
 
-                  <option value="popular">по популярности</option>
-                  <option value="low-price">сначала недорогие</option>
-                  <option value="high-price">сначала дорогие</option>
-                  <option value="fatness">по жирности</option>
+            </header>
+          </div>
+          <!-- end catalog-header -->
+          
+          
+          <!-- begin search-options -->
+          <div class="search-options__wrap">
+            <div class="search-options">
 
-                </select>
+              <form action="#" method="get">
 
-              </div>
-              
+                <div class="search-options__filter">
 
-            </div>
+                  <h5 class="search-options__title">Сортировка:</h5>
+                  
+                  <div class="filter-sorting__wrap">
+
+                    <select class="filter-sorting"  name="sort">
+
+                      <option value="popular">по популярности</option>
+                      <option value="low-price">сначала недорогие</option>
+                      <option value="high-price">сначала дорогие</option>
+                      <option value="fatness">по жирности</option>
+
+                    </select>
+
+                  </div>
+                  
+
+                </div>
 
 
-            <div class="search-options__filter">
+                <div class="search-options__filter">
 
-              <h5 class="search-options__title">Цена: 100 руб. &ndash; 500 руб.</h5>
+                  <h5 class="search-options__title">Цена: 100 руб. &ndash; 500 руб.</h5>
 
-              <div class="filter-price">
+                  <div class="filter-price">
 
-                <div class="filter-price__scale">
-                  <div class="filter-price__bar">
-                      <div class="filter-price__toggle  filter-price__toggle--min"></div>
-                      <div class="filter-price__toggle  filter-price__toggle--max"></div>
+                    <div class="filter-price__scale">
+                      <div class="filter-price__bar">
+                          <div class="filter-price__toggle  filter-price__toggle--min"></div>
+                          <div class="filter-price__toggle  filter-price__toggle--max"></div>
+                      </div>
+
+                    </div>
+
                   </div>
 
                 </div>
 
-              </div>
+
+                <fieldset class="search-options__filter  search-options__fieldset">
+
+                  <legend class="search-options__title">Жирность:</legend>
+                  
+                  <div class="filter-fatness">
+
+                    <div class="filter-fatness__item">
+                      <input type="radio" name="fatness" value="0" id="fatness--0">
+                      <label for="fatness--0">0%</label>
+                    </div>
+                    
+                    <div class="filter-fatness__item">
+                      <input type="radio" name="fatness" value="10" id="fatness--10" checked>
+                      <label for="fatness--10">до 10%</label>
+                    </div>
+                    
+                    <div class="filter-fatness__item">
+                      <input type="radio" name="fatness" value="30" id="fatness--30">
+                      <label for="fatness--30">до 30%</label>
+                    </div>
+                    
+                    <div class="filter-fatness__item">
+                      <input type="radio" name="fatness" value="30+" id="fatness--more-than-30" disabled>
+                      <label for="fatness--more-than-30">выше 30%</label>
+                    </div>
+                    
+                  </div>
+
+                </fieldset>
+
+
+                <fieldset class="search-options__filter search-options__fieldset">
+                  
+                  <legend class="search-options__title">Наполнители:</legend>
+                  
+                  <div class="filter-fillers">
+                    
+                    <div class="filter-fillers__item">
+                      <input type="checkbox" name="filling--choco" id="filling--choco" checked>
+                      <label for="filling--choco">шоколадные</label>
+                    </div>
+                    
+                    <div class="filter-fillers__item">
+                      <input type="checkbox" name="filling--powder" id="filling--powder" checked disabled>
+                      <label for="filling--powder">сахарные присыпки</label>
+                    </div>
+                    
+                    <div class="filter-fillers__item">
+                      <input type="checkbox" name="filling--fruits" id="filling--fruits">
+                      <label for="filling--fruits">фрукты</label>
+                    </div>
+                    
+                    <div class="filter-fillers__item">
+                      <input type="checkbox" name="filling--syrup" id="filling--syrup">
+                      <label for="filling--syrup">сиропы</label>
+                    </div>
+                    
+
+                    <div class="filter-fillers__item">
+                      <input type="checkbox" name="filling--jam" id="filling--jam">
+                      <label for="filling--jam">джемы</label>
+                    </div>
+                    
+                  </div>
+
+                </fieldset>
+
+
+                <input class="search-options__btn" type="submit" name="submit" value="Применить">
+
+              </form>
 
             </div>
+          </div>
+          <!-- end search-options -->
 
+          
 
-            <fieldset class="search-options__filter  search-options__fieldset">
+          <!-- begin items -->
+          <div class="catalog">
 
-              <legend class="search-options__title">Жирность:</legend>
-              
-              <div class="filter-fatness">
-
-                <div class="filter-fatness__item">
-                  <input type="radio" name="fatness" value="0" id="fatness--0">
-                  <label for="fatness--0">0%</label>
-                </div>
-                
-                <div class="filter-fatness__item">
-                  <input type="radio" name="fatness" value="10" id="fatness--10" checked>
-                  <label for="fatness--10">до 10%</label>
-                </div>
-                
-                <div class="filter-fatness__item">
-                  <input type="radio" name="fatness" value="30" id="fatness--30">
-                  <label for="fatness--30">до 30%</label>
-                </div>
-                
-                <div class="filter-fatness__item">
-                  <input type="radio" name="fatness" value="30+" id="fatness--more-than-30" disabled>
-                  <label for="fatness--more-than-30">выше 30%</label>
-                </div>
-                
-              </div>
-
-            </fieldset>
-
-
-            <fieldset class="search-options__filter search-options__fieldset">
-              
-              <legend class="search-options__title">Наполнители:</legend>
-              
-              <div class="filter-fillers">
-                
-                <div class="filter-fillers__item">
-                  <input type="checkbox" name="filling--choco" id="filling--choco" checked>
-                  <label for="filling--choco">шоколадные</label>
-                </div>
-                
-                <div class="filter-fillers__item">
-                  <input type="checkbox" name="filling--powder" id="filling--powder" checked disabled>
-                  <label for="filling--powder">сахарные присыпки</label>
-                </div>
-                
-                <div class="filter-fillers__item">
-                  <input type="checkbox" name="filling--fruits" id="filling--fruits">
-                  <label for="filling--fruits">фрукты</label>
-                </div>
-                
-                <div class="filter-fillers__item">
-                  <input type="checkbox" name="filling--syrup" id="filling--syrup">
-                  <label for="filling--syrup">сиропы</label>
-                </div>
-                
-
-                <div class="filter-fillers__item">
-                  <input type="checkbox" name="filling--jam" id="filling--jam">
-                  <label for="filling--jam">джемы</label>
-                </div>
-                
-              </div>
-
-            </fieldset>
-
-
-            <input class="search-options__btn" type="submit" name="submit" value="Применить">
-
-          </form>
-
-        </div>
-        <!-- end search-options -->
-
-        
-
-        <!-- begin items -->
-        <div class="catalog">
-
-          <div class="catalog__inner">
-            
             <article class="catalog-item">
               <div class="catalog-item__inner">
                 <img class="catalog-item__img" src="img/content/icecream_orange-jam_267x267.png" alt="Сливочное мороженое с апельсиновым джемом"  width="267"  height="267">
@@ -514,12 +516,8 @@
                 <a href="#" class="btn--red">Быстрый просмотр</a>
               </div> 
             </article>
- 
-          </div>
 
 
-
-          <div class="catalog__inner">
             
             <article class="catalog-item">
               <div class="catalog-item__inner">
@@ -590,12 +588,7 @@
                 <a href="#" class="btn--red">Быстрый просмотр</a>
               </div> 
             </article>
-            
-          </div>
 
-
-
-          <div class="catalog__inner">
             
             <article class="catalog-item">
               <div class="catalog-item__inner">
@@ -667,110 +660,114 @@
                 <a href="#" class="btn--red">Быстрый просмотр</a>
               </div> 
             </article>
-            
+
+          </div>
+          <!-- end items -->
+
+          
+          <!-- begin pagination -->
+          <div class="pagination__wrap">
+
+            <div class="pagination">
+
+              <ul>
+                <li class="pagination__btn  pagination__btn--arrow  pagination__btn--disabled">
+                  <a href="#">
+                    <svg class="icon-arrow" width="9" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left"></use></svg>
+                  </a>
+                </li><!--
+             --><li class="pagination__btn  pagination__btn--current">
+                  <a href="#">1</a>
+                </li><!--
+             --><li class="pagination__btn">
+                  <a href="#">2</a>
+                </li><!--
+             --><li class="pagination__btn">
+                  <a href="#">3</a>
+                </li><!--
+             --><li class="pagination__btn">
+                  <a href="#">4</a>
+                </li><!--
+             --><li class="pagination__btn">
+                  <a href="#">5</a>
+                </li><!--
+             --><li class="pagination__btn  pagination__btn--arrow">
+                  <a href="#">
+                    <svg class="icon-arrow" width="9" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use></svg>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+          <!-- end pagination -->
+
+        </main>
+
+      </div>
+      <!-- end main -->
+
+      
+      <!-- begin footer -->
+      <div class="main-footer__wrap">
+        
+        <footer class="main-footer  main-footer__catalog  clearfix">
+
+          <div class="main-footer__social">
+            <a href="#"  class="social__link" title="Мы в Twitter">
+              <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
+            </a>
+            <a href="#"  class="social__link" title="Мы в Instagram">Instagram
+              <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-inst"></use></svg>
+            </a>
+            <a href="#"  class="social__link" title="Мы на Facebook">Facebook
+              <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use></svg>
+            </a>
+            <a href="#"  class="social__link" title="Мы в VK">
+              <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"></use></svg>
+            </a>
           </div>
 
-        </div>
-        <!-- end items -->
 
-        
-        <!-- begin pagination -->
-        <div class="pagination">
+          <div class="main-footer__info">
+            <ul>
+              <li>
+                <svg class="main-footer__info-icon" width="15" height="13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use></svg>
 
-          <ul>
-            <li class="pagination__btn  pagination__btn--arrow  pagination__btn--disabled">
-              <a href="#">
-                <svg class="icon-arrow" width="9" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left"></use></svg>
-              </a>
-            </li><!--
-         --><li class="pagination__btn  pagination__btn--current">
-              <a href="#">1</a>
-            </li><!--
-         --><li class="pagination__btn">
-              <a href="#">2</a>
-            </li><!--
-         --><li class="pagination__btn">
-              <a href="#">3</a>
-            </li><!--
-         --><li class="pagination__btn">
-              <a href="#">4</a>
-            </li><!--
-         --><li class="pagination__btn">
-              <a href="#">5</a>
-            </li><!--
-         --><li class="pagination__btn  pagination__btn--arrow">
-              <a href="#">
-                <svg class="icon-arrow" width="9" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use></svg>
-              </a>
-            </li>
-          </ul>
+                <a href="#">Для поставщиков</a>
+              </li><!--
+           --><li>
+                <a href="#">Наши документы</a>
+              </li><!--
+           --><li>
+                <a href="#">О производстве</a>
+              </li><!--
+           --><li>
+                <a href="#">Экологические стандарты</a>
+              </li>
+            </ul>
+          </div>
 
-        </div>
-        <!-- end pagination -->
 
-      </main>
+          <div class="main-footer__copyright">
+
+            <a href="https://htmlacademy.ru"  class="copyright__logo" target="_blank">
+              <img class="copyright__img" src="img/logo/logo-htmlacademy.png" alt="HTML academy" width="108" height="37">
+            </a>
+
+            <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>&copy; 2016</p>
+
+          </div>
+
+        </footer>
+
+      </div>
+      <!-- end footer -->
 
     </div>
-    <!-- end main -->
-
-    
-    <!-- begin footer -->
-    <div class="main-footer__wrap">
-      
-      <footer class="main-footer  clearfix">
-
-        <div class="main-footer__social">
-          <a href="#"  class="social__link" title="Мы в Twitter">
-            <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
-          </a>
-          <a href="#"  class="social__link" title="Мы в Instagram">Instagram
-            <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-inst"></use></svg>
-          </a>
-          <a href="#"  class="social__link" title="Мы на Facebook">Facebook
-            <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use></svg>
-          </a>
-          <a href="#"  class="social__link" title="Мы в VK">
-            <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"></use></svg>
-          </a>
-        </div>
-
-
-        <div class="main-footer__info">
-          <ul>
-            <li>
-              <svg class="main-footer__info-icon" width="15" height="13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use></svg>
-
-              <a href="#">Для поставщиков</a>
-            </li><!--
-         --><li>
-              <a href="#">Наши документы</a>
-            </li><!--
-         --><li>
-              <a href="#">О производстве</a>
-            </li><!--
-         --><li>
-              <a href="#">Экологические стандарты</a>
-            </li>
-          </ul>
-        </div>
-
-
-        <div class="main-footer__copyright">
-
-          <a href="https://htmlacademy.ru"  class="copyright__logo">
-            <img class="copyright__img" src="img/logo/logo-htmlacademy.png" alt="HTML academy" width="108" height="37">
-          </a>
-
-          <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>&copy; 2016</p>
-
-        </div>
-
-      </footer>
-
-    </div>
-    <!-- end footer -->
-
-    </div>
+  
+    <script src="js/script.min.js"></script>
 
   </body>
   
