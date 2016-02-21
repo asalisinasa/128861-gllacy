@@ -1167,7 +1167,7 @@ h3 {
 .catalog-item__price .icon-ruble {
   stroke: #313235;
   stroke-width: 7px;
-  stop-opacity: 50%;
+  stroke-opacity: 50%;
   vertical-align: middle;
 }
 
