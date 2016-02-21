@@ -3,7 +3,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Глейси: Главная</title>
+    <title>Глейси: Обратная связь</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
@@ -34,6 +34,11 @@
         <symbol id="icon-basket-filled" viewBox="0 0 1512 1024">
           <title>icon-basket-filled</title>
           <path fill="currentColor" class="path1 fill-color1" d="M0 0h1511.024l-137.366 1024-1261.268-12.488-112.39-1011.512z"></path>
+        </symbol>
+
+        <symbol id="icon-ruble" viewBox="0 0 842 1024">
+          <title>icon-ruble</title>
+            <path fill="#fff" class="path1 fill-color3" d="M-0.386 466.141h118.286v-465.82h285.563c125.579 0 193.588 5.847 233.006 16.063 116.808 30.68 205.892 135.794 205.892 299.345 0 186.906-119.732 284.728-227.802 308.116-49.634 10.184-107.428 14.585-200.881 14.585h-97.629v87.638h482.525v172.289h-482.525v125.579h-198.15v-125.579h-118.286v-172.289h118.286v-87.638h-118.286v-172.289zM316.051 174.088v290.575h75.752c81.759 0 122.013-5.847 149.769-16.063 52.557-18.986 87.606-70.066 87.606-129.948 0-74.467-49.634-125.579-115.363-137.272-24.833-4.369-60.685-7.292-135.184-7.292h-62.58z"></path>
         </symbol>
 
         <symbol id="icon-icecream" viewBox="0 0 1024 1024">
@@ -117,25 +122,24 @@
             <li class="main-nav__item  main-nav__item--dropdown">
               <a href="catalog.html">Каталог</a>
 
-              <div class="sub-menu">
-                <ul>
-                  <li class="sub-menu__item">
-                    <a href="#">Новинки</a>
-                  </li><!--
-               --><li class="sub-menu__item">
-                    <a href="catalog.html">Сливочное</a>
-                  </li><!--
-               --><li class="sub-menu__item">
-                    <a href="#">Щербеты</a>
-                  </li><!--
-               --><li class="sub-menu__item">
-                    <a href="#">Фруктовый лед</a>
-                  </li><!--
-               --><li class="sub-menu__item">
-                    <a href="#">Мелорин</a>
-                  </li>
-                </ul>
-              </div>
+              <ul class="sub-menu">
+                <li class="sub-menu__item">
+                  <a href="#">Новинки</a>
+                </li><!--
+             --><li class="sub-menu__item">
+                  <a href="catalog.html">Сливочное</a>
+                </li><!--
+             --><li class="sub-menu__item">
+                  <a href="#">Щербеты</a>
+                </li><!--
+             --><li class="sub-menu__item">
+                  <a href="#">Фруктовый лед</a>
+                </li><!--
+             --><li class="sub-menu__item">
+                  <a href="#">Мелорин</a>
+                </li>
+              </ul>
+
             </li><!--
          --><li class="main-nav__item">
               <a href="#">Доставка и оплата</a>
@@ -160,7 +164,7 @@
             <!-- search popup -->
             <div class="user-block__popup  user-block__popup--search">
               <form action="#" method="get">
-                <input  class="search__text-field textarea"  type="search"  name="search"  value=""  id="search">
+                <input class="search__text-field  textarea" type="search" name="search" id="search">
                 <div class="placeholder">
                   <label for="search" class="form-hint">Что ищем?</label>
                 </div>
@@ -181,17 +185,17 @@
             <!-- login popup -->
             <div class="user-block__popup  user-block__popup--login">
               <form action="#" method="get">
-                <input class="textarea"  type="email"  name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  id="login__e-mail" required>
+                <input class="textarea" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="login__e-mail" required>
                 <div class="placeholder">
                   <label for="login__e-mail" class="form-hint">Электронная почта</label>
                 </div>
 
-                <input class="textarea"  type="password"  name="password"  id="login__password" required >
+                <input class="textarea" type="password" name="password" id="login__password" required >
                 <div class="placeholder">
                   <label for="login__password" class="form-hint">Пароль</label>
                 </div>
 
-                <input  class="btn--red  login__btn"  type="submit"  name="submit"  value="Войти">
+                <input class="btn--red  login__btn" type="submit" value="Войти">
               </form>
 
               <div class="login__support">
@@ -220,7 +224,7 @@
                 <tr class="basket__row">
 
                   <td class="basket__cell">
-                    <button class="basket__btn--delete"></button>
+                    <button class="basket__btn--delete" type="button"></button>
                   </td>
 
                   <td class="basket__cell">
@@ -242,7 +246,7 @@
                 <tr class="basket__row">
 
                   <td class="basket__cell">
-                    <button class="basket__btn--delete"></button>
+                    <button class="basket__btn--delete" type="button"></button>
                   </td>
 
                   <td class="basket__cell">
@@ -289,7 +293,7 @@
     <main class="main-feedback">
         
       <!-- begin feedback-form -->
-      <div class="feedback-form feedback-form--no-js">
+      <div class="feedback-form  feedback-form--no-js">
 
         <div class="feedback-form__inner">
 
@@ -301,13 +305,13 @@
               <label for="feedback-form__name" class="form-hint">Как вас зовут?</label>
             </div>
 
-            <input class="textarea" type="email" name="email" value=""  id="feedback-form__email">
+            <input class="textarea" type="email" name="email" value="" id="feedback-form__email">
             <div class="placeholder">
               <label for="feedback-form__email" class="form-hint">Ваша почта для ответа?</label>
             </div>
 
-            <textarea class="textarea big" cols="30" rows="5" name="text" id="feedback-form__text"></textarea>
-            <div class="placeholder big-area">
+            <textarea class="textarea  big" cols="30" rows="5" name="text" id="feedback-form__text"></textarea>
+            <div class="placeholder  big-area">
               <label for="feedback-form__text" class="form-hint">Напишите что-нибудь...</label>
             </div>
 
@@ -328,28 +332,28 @@
       
       <footer class="main-footer  clearfix">
 
-        <div class="main-footer__social main-footer__social--index">
-          <a href="#"  class="social__link" title="Мы в Twitter">
+        <div class="main-footer__social  main-footer__social--index">
+          <a href="#" class="social__link" title="Мы в Twitter">
             <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
           </a>
-          <a href="#"  class="social__link" title="Мы в Instagram">Instagram
-            <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-inst"></use></svg>
+          <a href="#" class="social__link" title="Мы в Instagram">Instagram
+            <svg class="social__icon" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-inst"></use></svg>
           </a>
-          <a href="#"  class="social__link" title="Мы на Facebook">Facebook
-            <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use></svg>
+          <a href="#" class="social__link" title="Мы на Facebook">Facebook
+            <svg class="social__icon" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use></svg>
           </a>
-          <a href="#"  class="social__link" title="Мы в VK">
-            <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"></use></svg>
+          <a href="#" class="social__link" title="Мы в VK">
+            <svg class="social__icon" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"></use></svg>
           </a>
         </div>
 
 
-        <div class="main-footer__info main-footer__info--index">
+        <div class="main-footer__info  main-footer__info--index">
           <ul>
             <li>
               <svg class="main-footer__info-icon" width="15" height="13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use></svg>
 
-              <a href="#">Для поставщиков</a>
+              <a href="#"><b>Для поставщиков</b></a>
             </li><!--
          --><li>
               <a href="#">Наши документы</a>
@@ -366,11 +370,11 @@
 
         <div class="main-footer__copyright">
 
-          <a href="https://htmlacademy.ru"  class="copyright__logo" target="_blank">
+          <a href="https://htmlacademy.ru" class="copyright__logo" target="_blank">
             <img class="copyright__img" src="img/logo/logo-htmlacademy.png" alt="HTML academy" width="108" height="37">
           </a>
 
-          <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>&copy; 2016</p>
+          <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTML Academy </a>&copy; 2016</p>
 
         </div>
 

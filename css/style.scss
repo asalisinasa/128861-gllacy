@@ -1,19 +1,26 @@
-////////// TO DO ////////////
+////////// Пояснения ////////////
 
-// 3. google map pin???
-// 4. js плейсхолдеры и анимация в ie и ff и симулятор сафари!
-// 5. селект в ie - убрать bg и color у options + стрелочка на фокусированном
-// 6. отступ справа у bg
+// Базовые критерии
+// Б16.На странице с блогом (которую не верстали), это изображение будет контентным. На индексной странице оно на первый взгляд фоновое, но т.к. это изображение будет грузиться из админки, разместила его с помощью тега img. Поэтому положу его в папку с контентными изображениями и уберу префикс.
+
+// Б11. (catalog.html)
+// Пояснение касательно размеров .catalog-item и и его дочерних элементов:
+// От размеров, прописанных в спецификации, я решила немного отойти нарочно, дабы без лишних проблем реализовать ховеры при наведении на товар. 
+// Поэтому проигнорирую, с вашего позволения)
+
+// Б12. 
+// 1. Недоразумение с IE исправила путем добавления иконки рубля через svg спрайт.
+// 2. Для select использовала свойство appearance. Заработало, но я не уверена, что это правильное решение. CanIUse сообщает, что в опере это свойство будет поддерживаться при использовании с префиксом -webkit-, а на W3Schools пишут, что в опере это свойство не поддерживается.
+
+// Дополнительнае критерии
+// Б7. .big:focus + .placeholder .form-hint { .. } 
+// Думаете здесь это необходимо? Ведь тут нужно применять свойство точечно к .form-hint через его родительский селектор. 
+// Конечно можно попробовать добавить для 
+// <label for="feedback-form__text" class="form-hint">Напишите что-нибудь...</label>
+// класс с префиксом big-form-hint, но тогда придется удалить класс form-hint, а для .big-form-hint продублировать большинство свойств.
 
 
-// 2. инпут:чект + .selector перед ним прописываем:
-// input:enabled + .selector
-// input:disabled + .selector
-
-
-
-
-
+// Б13. JavaScript-файл представлен в двух вариантах: с форматированием и минимизированный, к странице подключён минимизированный.
 
 
 
@@ -197,7 +204,7 @@ body {
 
 .main-header__wrap,
 .slider__wrap,
-.bunners__wrap,
+.banners__wrap,
 .popular__wrap,
 .features__wrap,
 .contacts,
@@ -211,7 +218,7 @@ body {
 
 .main-header,
 .slider,
-.bunners,
+.banners,
 .features,
 .contacts,
 .catalog-header,
@@ -292,7 +299,7 @@ h3 {
   z-index: 10;
 }
 
-.bunner-blog {
+.banner-blog {
 
   &__img {
     z-index: 2;
@@ -330,7 +337,7 @@ h3 {
 /////////////// background /////////////
 
 .catalog-background {
-  min-width: 120vh;
+  min-width: 900px;
   background-image: linear-gradient(#9db1a5, #849d8f);
 }
 
@@ -341,7 +348,6 @@ h3 {
   
   display: block;
   padding: 0;
-  // padding: 12px 24px;
   border: 0 none;
   outline: 0 none;
   
@@ -424,7 +430,6 @@ h3 {
   transition: 0.2s ease all;
 }
 
-
 .lostfocus {
   top: -72px;
   font-size: 11px;
@@ -499,15 +504,16 @@ h3 {
 ////////////////////// Main-nav ////////////////////////
 
 .main-nav {
-  position: absolute;
-  left: 154px;
-  right: 270px;
+  float: left;
+  max-width: 500px;
 
   &__menu {
     padding-top: 22px;
-    margin-left: 35px; 
+    margin-left: 15px; 
     
     @include ul-reset; 
+    
+    font-weight: 500;
   }
 
   &__item {
@@ -561,8 +567,6 @@ h3 {
     &--dropdown {
       position: relative;
       
-      margin-bottom: 10px;
-      
       &:hover>.sub-menu {
         display: block; 
       } 
@@ -579,26 +583,26 @@ h3 {
   display: none;
   
   position: absolute;
-  top: 37px;
+  top: 27px;
   left: -7px;
   
   min-width: 143px;
+  padding-top: 10px;
 
-  background: #F8F7F4;
   color: #343434;
   box-shadow: 0 20px 20px 0 rgba(0, 0 , 0, 0.4);
 
   border-radius: 5px;
   
+  @include ul-reset;
+  
   font-size: 14px;
   line-height: 20px;
   font-weight: normal;
-  
-  ul {
-    @include ul-reset;
-  }
 
   &__item {
+    
+    background: #F8F7F4;
     
     a {
       display: block;
@@ -607,7 +611,7 @@ h3 {
       padding-left: 12px;
       padding-top: 6px;
       padding-bottom: 6px;
-      border-bottom: 0;
+      border-bottom: 0; 
     }
 
     &:hover {
@@ -631,7 +635,8 @@ h3 {
   }
 
   &__item:first-child {
-
+    border-radius: 5px 5px 0 0;
+    
     a {
       padding-top: 9px;
       padding-bottom: 10px;
@@ -657,6 +662,9 @@ h3 {
   }
 
   &__item:last-child {
+    border-radius: 0 0 5px 5px;
+    padding-bottom: 2px;
+    
     &:hover {
       background: #FBDED7;
       
@@ -742,7 +750,7 @@ h3 {
 
     &--basket {
       min-width: 57px;
-      text-align: center;
+      text-align: left;
     }
 
     &:hover {
@@ -1004,7 +1012,7 @@ h3 {
 }
 
 .index-background {
-  min-width: 960px;
+  min-width: 900px;
   margin-top: -14px;
       
   background-repeat: no-repeat;
@@ -1020,8 +1028,7 @@ h3 {
   visibility: hidden;
 }
 
-.index-background::before,
-.index-background::after {
+.index-background::before {
   background-image: url("../img/background/slide-1.png");
 }
 
@@ -1045,7 +1052,7 @@ h3 {
 
 .slider {
   position: relative;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   padding-top: 200px;
   overflow: hidden;
   
@@ -1073,7 +1080,7 @@ h3 {
 
   &__controls--wrap {
     position: absolute;
-    bottom: 20px;
+    bottom: 21px;
     
     display: block;
     
@@ -1084,6 +1091,7 @@ h3 {
     height: 63px;
     width: 280px;
     margin: 0 auto;
+    margin-bottom: 3px;
     
     border-radius: 100px;
     
@@ -1097,7 +1105,7 @@ h3 {
     
     width: 17px;
     height: 17px;
-    margin-right: 3px;
+    margin-right: 4px;
     
     cursor: pointer;
     
@@ -1105,6 +1113,10 @@ h3 {
     border-radius: 50%;
     
     font-size: 0;
+    
+    &:hover {
+      background-color: rgba(248, 247, 244, 0.4);
+    }
   }
 }
 
@@ -1132,18 +1144,18 @@ h3 {
 ///////////////////////////////////////////////////////////////////////
 
 
-.bunners {
+.banners {
   @include clearfix;
   
   margin-bottom: 15px;  
 }
 
-.bunner {
+.banner {
   position: relative;
 
   width: 48.9%;
   box-sizing: border-box;
-  height: 230px;
+  min-height: 230px;
   padding: 15px 18px;
   margin-bottom: 15px; 
     
@@ -1195,12 +1207,12 @@ h3 {
   &-blog {
     position: relative;
     
-    height: 220px;
+    min-height: 220px;
     padding: 0;
         
     background: white;
     
-    .bunner-blog__img {
+    .banner-blog__img {
       position: absolute;
       right: 0;
       
@@ -1250,7 +1262,7 @@ h3 {
   }
 
     &-subscript {
-      height: 220px;
+      min-height: auto;
       padding: 6px;
       
       background: #f8f7f4;
@@ -1259,11 +1271,11 @@ h3 {
       &__inner {
         position: relative;
         
-        height: 161px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 13px;
-        padding-bottom: 34px;
+        min-height: 208px;
+        padding: 28px 20px 24px;
+        -webkit-box-sizing: border-box;
+           -moz-box-sizing: border-box;
+                box-sizing: border-box;
         border-radius: 10px;
     
         color: $gray;
@@ -1271,6 +1283,7 @@ h3 {
         
         p {
           min-height: 90px;
+          margin-top: 0;
           margin-bottom: 2px;
         }
       }
@@ -1281,19 +1294,22 @@ h3 {
       
       &__email {
         width: 100%; 
+        padding: 21px;
         
         outline: 0 none; 
         border-radius: 3px;
       }
       
       .form-hint {
-        left: 11px;
+        left: 10px;
+        top: -44px;
         
         font-size: 16px;
       }
 
       .lostfocus {
-         font-size: 11px;
+        top: -72px;
+        font-size: 11px;
        }
 
       &__btn {
@@ -1301,8 +1317,8 @@ h3 {
         float: right;
         
         min-width: 120px; 
-        margin-top: 7px; 
-        padding: 0 20px;      
+        margin-top: 9px;
+        padding: 0 21px;     
         
         color: white;
         font-size: 17px;
@@ -1394,6 +1410,13 @@ h3 {
       
     span {
       font-size: 30px;
+    }
+
+    .icon-ruble {
+      stroke: #313235;
+      stroke-width: 7px;
+      stop-opacity: 50%;
+      vertical-align: middle;
     }
   }
 
@@ -1682,7 +1705,7 @@ h3 {
     display: inline-block;
     vertical-align: top; 
     
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     margin-right: 10px;
   }
 
@@ -1756,6 +1779,7 @@ h3 {
 .filter-fatness,
 .filter-fillers,
 .filter-price   {
+  height: 24px;
   padding: 6px 15px;
     
   background-color: rgba(248, 247, 244, 0.2);
@@ -1770,6 +1794,9 @@ h3 {
   
   border: 0;
   outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   
   background-color: #a9b9af;
   color: white;
@@ -1804,14 +1831,14 @@ h3 {
 }
 
 .filter-price {
-  height: 23px;
+  height: 24px;
   
   &__scale {
     position: relative;
     
     width: 190px;
     height: 4px;
-    margin-top: 9px;
+    margin-top: 10px;
     
     background-color: rgba(248, 247, 244, 0.5);
   }
@@ -1860,7 +1887,7 @@ h3 {
     position: relative;
     
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     
     padding-right: 45px;
     
@@ -1875,7 +1902,7 @@ h3 {
     input[type="radio"]+label::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 1px;
       left: -30px;
       
       width: 18px;
@@ -1894,7 +1921,7 @@ h3 {
       content: "";
       
       position: absolute;
-      top: 5px;
+      top: 6px;
       left: -25px;
       
       width: 10px;
@@ -1921,7 +1948,7 @@ h3 {
     }
 
     input[type="radio"]:disabled+label::before,
-    input[type="radio"]:disabled input[type="radio"]:checked+label:hover::before  {
+    input[type="radio"]:disabled:checked+label:hover::before  {
       width: 18px;
       height: 18px;
       
@@ -1936,7 +1963,7 @@ h3 {
     position: relative;
     
     display: inline-block; 
-    vertical-align: top;
+    vertical-align: middle;
     
     padding-right: 50px;
     
@@ -1952,7 +1979,7 @@ h3 {
     input[type="checkbox"]+label::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 1px;
       left: -34px;
       
       width: 17px;
@@ -2003,14 +2030,14 @@ h3 {
       border: 2px solid #F8F7F4;
     }
     input[type="checkbox"]:disabled+label::before,
-    input[type="checkbox"]:disabled input[type="checkbox"]:checked+label:hover::before {
+    input[type="checkbox"]:disabled:checked+label:hover::before {
       width: 17px;
       height: 17px;
       
       border: 1px solid rgba(248, 247, 244, 0.4);
     }
     input[type="checkbox"]:disabled+label::after,
-    input[type="checkbox"]:disabled input[type="checkbox"]:checked+label:hover::after {
+    input[type="checkbox"]:disabled:checked+label:hover::after {
       border-right-color: rgba(248, 247, 244, 0.4);
       border-bottom-color: rgba(248, 247, 244, 0.4);
     }
@@ -2130,7 +2157,7 @@ h3 {
     margin-right: 2.2%;
     
     &--index {
-      margin-top: 17px;
+      margin-top: 16px;
     }
   }
   &__info {
@@ -2176,6 +2203,10 @@ h3 {
       
       @include link-states__green-bg;
     }
+
+    &-icon {
+      vertical-align: middle;
+    }
   }
 
   
@@ -2192,17 +2223,17 @@ h3 {
     position: relative;
     
     font-size: 0; 
-    margin-right: 13px;
+    margin-right: 11px;
     
     &::before {
       content: "";
         
       position: absolute;
-      top: -33px;
+      top: -35px;
       left: 3px;
         
-      width: 30px;
-      height: 30px;
+      width: 32px;
+      height: 32px;
         
       border-radius: 50%;
         
@@ -2230,8 +2261,8 @@ h3 {
   }
 
   .social__icon {
-    color: rgba(247, 246, 243, 0.8);
-    border: 3px solid rgba(247, 246, 243, 0.5);
+    color: rgba(248, 247, 244, 0.8);
+    border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     
     &:not(:last-child) {
@@ -2293,7 +2324,7 @@ h3 {
     
     position: absolute;
     top: 20%;
-    left: 37%;
+    left: 36.6%;
     
     width: 428px;
     padding: 20px 25px;
@@ -2328,7 +2359,7 @@ h3 {
     }
   }
   
-  &__btn--close {
+  &__btn--hidden {
     position: absolute;
     top: 15px;
     right: 15px;

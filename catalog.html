@@ -36,6 +36,11 @@
           <path fill="currentColor" class="path1 fill-color1" d="M0 0h1511.024l-137.366 1024-1261.268-12.488-112.39-1011.512z"></path>
         </symbol>
 
+        <symbol id="icon-ruble" viewBox="0 0 842 1024">
+          <title>icon-ruble</title>
+            <path fill="#fff" class="path1 fill-color3" d="M-0.386 466.141h118.286v-465.82h285.563c125.579 0 193.588 5.847 233.006 16.063 116.808 30.68 205.892 135.794 205.892 299.345 0 186.906-119.732 284.728-227.802 308.116-49.634 10.184-107.428 14.585-200.881 14.585h-97.629v87.638h482.525v172.289h-482.525v125.579h-198.15v-125.579h-118.286v-172.289h118.286v-87.638h-118.286v-172.289zM316.051 174.088v290.575h75.752c81.759 0 122.013-5.847 149.769-16.063 52.557-18.986 87.606-70.066 87.606-129.948 0-74.467-49.634-125.579-115.363-137.272-24.833-4.369-60.685-7.292-135.184-7.292h-62.58z"></path>
+        </symbol>
+
         <symbol id="icon-icecream" viewBox="0 0 1024 1024">
           <title>icon-icecream</title>
           <path class="path1" d="M511.935 1024.238c-282.908 0-512.238-229.352-512.238-512.259s229.33-512.238 512.238-512.238c282.908 0 512.259 229.33 512.259 512.238s-229.352 512.259-512.259 512.259zM511.935 42.966c-258.615 0-469.013 210.398-469.013 469.013 0 258.637 210.398 469.034 469.013 469.034s469.034-210.398 469.034-469.034c0-258.615-210.419-469.013-469.034-469.013zM677.422 674.072h-335.685c-9.661 0-17.485-7.824-17.485-17.485v-317.25c0-49.514 19.257-96.068 54.269-131.058 35.012-35.012 81.544-54.291 131.058-54.291 49.493 0 96.046 19.278 131.058 54.291 34.991 34.991 54.269 81.544 54.269 131.058v317.25c0 9.661-7.824 17.485-17.485 17.485zM659.938 428.77c-13.702-4.625-22.304-14.178-29.069-21.699-7.997-8.861-11.908-12.816-20.445-12.859-0.497 0.303-2.961 1.988-6.678 9.229-3.739 7.262-7.197 17.031-10.547 26.497-4.409 12.427-8.969 25.265-15.064 35.617-9.185 15.518-20.943 23.385-34.991 23.385s-25.805-7.867-34.991-23.385c-6.095-10.352-10.655-23.19-15.064-35.617-3.35-9.466-6.808-19.235-10.547-26.497-3.717-7.219-6.16-8.926-6.678-9.229-8.537 0.043-12.449 3.998-20.424 12.859-9.293 10.309-22.002 24.444-46.575 24.444s-37.282-14.135-46.575-24.444c-1.102-1.232-2.118-2.334-3.069-3.372v235.403h300.716v-210.333zM553.863 824.538c0 24.465-19.819 44.284-44.284 44.284s-44.284-19.819-44.284-44.284v-133.219h88.568v133.219z"></path>
@@ -119,25 +124,23 @@
               <li class="main-nav__item  main-nav__item--dropdown  main-nav__item--current">
                 <a href="catalog.html">Каталог</a>
 
-                <div class="sub-menu">
-                  <ul>
-                    <li class="sub-menu__item">
-                      <a href="#">Новинки</a>
-                    </li><!--
-                 --><li class="sub-menu__item  sub-menu__item--current">
-                      <a href="catalog.html">Сливочное</a>
-                    </li><!--
-                 --><li class="sub-menu__item">
-                      <a href="#">Щербеты</a>
-                    </li><!--
-                 --><li class="sub-menu__item">
-                      <a href="#">Фруктовый лед</a>
-                    </li><!--
-                 --><li class="sub-menu__item">
-                      <a href="#">Мелорин</a>
-                    </li>
-                  </ul>
-                </div>
+                <ul class="sub-menu">
+                  <li class="sub-menu__item">
+                    <a href="#">Новинки</a>
+                  </li><!--
+               --><li class="sub-menu__item  sub-menu__item--current">
+                    <a href="catalog.html">Сливочное</a>
+                  </li><!--
+               --><li class="sub-menu__item">
+                    <a href="#">Щербеты</a>
+                  </li><!--
+               --><li class="sub-menu__item">
+                    <a href="#">Фруктовый лед</a>
+                  </li><!--
+               --><li class="sub-menu__item">
+                    <a href="#">Мелорин</a>
+                  </li>
+                </ul>
 
               </li><!--
            --><li class="main-nav__item">
@@ -164,7 +167,7 @@
               <!-- search popup -->
               <div class="user-block__popup  user-block__popup--search">
                 <form action="#" method="get">
-                  <input  class="search__text-field textarea"  type="search"  name="search"  value=""  id="search">
+                  <input class="search__text-field textarea" type="search" name="search" id="search">
                   <div class="placeholder">
                       <label for="search" class="form-hint">Что ищем?</label>
                   </div>
@@ -185,17 +188,17 @@
               <!-- login popup -->
               <div class="user-block__popup  user-block__popup--login">
                 <form action="#" method="get">
-                  <input class="textarea"  type="email"  name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  id="login__e-mail" required>
+                  <input class="textarea" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="login__e-mail" required>
                   <div class="placeholder">
                     <label for="login__e-mail" class="form-hint">Электронная почта</label>
                   </div>
 
-                  <input class="textarea"  type="password"  name="password"  id="login__password" required >
+                  <input class="textarea" type="password" name="password" id="login__password" required >
                   <div class="placeholder">
                     <label for="login__password" class="form-hint">Пароль</label>
                   </div>
 
-                  <input  class="btn--red  login__btn"  type="submit"  name="submit"  value="Войти">
+                  <input class="btn--red  login__btn" type="submit" value="Войти">
                 </form>
 
                 <div class="login__support">
@@ -211,7 +214,7 @@
             <!-- basket -->
             <div class="user-block__element">
 
-              <a href="#" class="user-block__btn user-block__btn--basket basket-filled">
+              <a href="#" class="user-block__btn  user-block__btn--basket basket-filled">
                 <svg class="user-block__btn--icon" width="21" height="20"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-basket"></use></svg>
                 <svg class="user-block__btn--icon" width="15" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-basket-filled"></use></svg>
                 2 товара
@@ -225,7 +228,7 @@
                   <tr class="basket__row">
 
                     <td class="basket__cell">
-                      <button class="basket__btn--delete"></button>
+                      <button class="basket__btn--delete" type="button"></button>
                     </td>
 
                     <td class="basket__cell">
@@ -246,7 +249,7 @@
                   <tr class="basket__row">
 
                     <td class="basket__cell">
-                      <button class="basket__btn--delete"></button>
+                      <button class="basket__btn--delete" type="button"></button>
                     </td>
 
                     <td class="basket__cell">
@@ -302,7 +305,7 @@
               <ul class="catalog-header__breadcrumbs">
 
                 <li class="catalog-header__item">
-                  <a href="#">Главная</a>
+                  <a href="index.html">Главная</a>
                 </li><!--
              --><li class="catalog-header__item">
                   <a href="#">Каталог</a>
@@ -331,7 +334,7 @@
                   
                   <div class="filter-sorting__wrap">
 
-                    <select class="filter-sorting"  name="sort">
+                    <select class="filter-sorting" name="sort">
 
                       <option value="popular">по популярности</option>
                       <option value="low-price">сначала недорогие</option>
@@ -396,7 +399,7 @@
                 </fieldset>
 
 
-                <fieldset class="search-options__filter search-options__fieldset">
+                <fieldset class="search-options__filter  search-options__fieldset">
                   
                   <legend class="search-options__title">Наполнители:</legend>
                   
@@ -448,8 +451,8 @@
 
             <article class="catalog-item">
               <div class="catalog-item__inner">
-                <img class="catalog-item__img" src="img/content/icecream_orange-jam_267x267.png" alt="Сливочное мороженое с апельсиновым джемом"  width="267"  height="267">
-                <div class="catalog-item__price">310&#8381;<span>/кг</span></div>
+                <img class="catalog-item__img" src="img/content/icecream_orange-jam_267x267.png" alt="Сливочное мороженое с апельсиновым джемом" width="267" height="267">
+                <div class="catalog-item__price">310<svg class="icon-ruble" width="29" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use></svg><span> /кг</span></div>
               </div>
               
               <a href="#" class="catalog-item__link">
@@ -466,8 +469,8 @@
 
             <article class="catalog-item">
               <div class="catalog-item__inner">
-                <img class="catalog-item__img" src="img/content/icecream_coffee-choclate_267x267.png" alt="Сливочно-кофейное мороженое"  width="267"  height="267">
-                <div class="catalog-item__price">380&#8381;<span>/кг</span></div> 
+                <img class="catalog-item__img" src="img/content/icecream_coffee-choclate_267x267.png" alt="Сливочно-кофейное мороженое" width="267" height="267">
+                <div class="catalog-item__price">380<svg class="icon-ruble" width="29" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use></svg><span> /кг</span></div> 
               </div>
               
               <a href="#" class="catalog-item__link">
@@ -484,8 +487,8 @@
 
             <article class="catalog-item">
               <div class="catalog-item__inner">
-                <img class="catalog-item__img" src="img/content/icecream_strawberry-white-choclate_267x267.png" alt="Сливочно-клубничное мороженое"  width="267"  height="267">
-                <div class="catalog-item__price">355&#8381;<span>/кг</span></div>
+                <img class="catalog-item__img" src="img/content/icecream_strawberry-white-choclate_267x267.png" alt="Сливочно-клубничное мороженое" width="267" height="267">
+                <div class="catalog-item__price">355<svg class="icon-ruble" width="29" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use></svg><span> /кг</span></div>
               </div>
               
               <a href="#" class="catalog-item__link">
@@ -502,8 +505,8 @@
 
             <article class="catalog-item">
               <div class="catalog-item__inner">
-                <img class="catalog-item__img" src="img/content/icecream_creme-brulee-caramel_267x267.png" alt="Сливочное крем-брюле"  width="267"  height="267">
-                <div class="catalog-item__price">415&#8381;<span>/кг</span></div>
+                <img class="catalog-item__img" src="img/content/icecream_creme-brulee-caramel_267x267.png" alt="Сливочное крем-брюле" width="267" height="267">
+                <div class="catalog-item__price">415<svg class="icon-ruble" width="29" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use></svg><span> /кг</span></div>
               </div>
               
               <a href="#" class="catalog-item__link">
@@ -521,8 +524,8 @@
             
             <article class="catalog-item">
               <div class="catalog-item__inner">
-                <img class="catalog-item__img" src="img/content/icecream_lingonberry-jam_267x267.png" alt="Сливочное мороженое с брусничным джемом"  width="267"  height="267">
-                <div class="catalog-item__price">325&#8381;<span>/кг</span></div>
+                <img class="catalog-item__img" src="img/content/icecream_lingonberry-jam_267x267.png" alt="Сливочное мороженое с брусничным джемом" width="267" height="267">
+                <div class="catalog-item__price">325<svg class="icon-ruble" width="29" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use></svg><span> /кг</span></div>
               </div>
           
               <a href="#" class="catalog-item__link">
@@ -538,8 +541,8 @@
 
             <article class="catalog-item">
               <div class="catalog-item__inner">
-                <img class="catalog-item__img" src="img/content/icecream_blueberry_267x267.png" alt="Сливочно-черничное мороженое"  width="267"  height="267">
-                <div class="catalog-item__price">410&#8381;<span>/кг</span></div>
+                <img class="catalog-item__img" src="img/content/icecream_blueberry_267x267.png" alt="Сливочно-черничное мороженое" width="267" height="267">
+                <div class="catalog-item__price">410<svg class="icon-ruble" width="29" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use></svg><span> /кг</span></div>
               </div>
               
               <a href="#" class="catalog-item__link">
@@ -556,8 +559,8 @@
 
             <article class="catalog-item">
               <div class="catalog-item__inner">
-                <img class="catalog-item__img" src="img/content/icecream_lemon_267x267.png" alt="Сливочно-лимонное мороженое"  width="267"  height="267">
-                <div class="catalog-item__price">375&#8381;<span>/кг</span></div>
+                <img class="catalog-item__img" src="img/content/icecream_lemon_267x267.png" alt="Сливочно-лимонное мороженое" width="267" height="267">
+                <div class="catalog-item__price">375<svg class="icon-ruble" width="29" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use></svg><span> /кг</span></div>
               </div>
               
               <a href="#" class="catalog-item__link">
@@ -574,8 +577,8 @@
 
             <article class="catalog-item">
               <div class="catalog-item__inner">
-                <img class="catalog-item__img" src="img/content/icecream_choco-chips_267x267.png" alt="Сливочное мороженое с шоколадной стружкой"  width="267"  height="267">
-                <div class="catalog-item__price">320&#8381;<span>/кг</span></div>
+                <img class="catalog-item__img" src="img/content/icecream_choco-chips_267x267.png" alt="Сливочное мороженое с шоколадной стружкой" width="267" height="267">
+                <div class="catalog-item__price">320<svg class="icon-ruble" width="29" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use></svg><span> /кг</span></div>
               </div>
               
               <a href="#" class="catalog-item__link">
@@ -592,8 +595,8 @@
             
             <article class="catalog-item">
               <div class="catalog-item__inner">
-                <img class="catalog-item__img" src="img/content/icecream_vanilla-choco_267x267.png" alt="Сливочно-ванильное мороженое"  width="267"  height="267">
-                <div class="catalog-item__price">440&#8381;<span>/кг</span></div>
+                <img class="catalog-item__img" src="img/content/icecream_vanilla-choco_267x267.png" alt="Сливочно-ванильное мороженое" width="267" height="267">
+                <div class="catalog-item__price">440<svg class="icon-ruble" width="29" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use></svg><span> /кг</span></div>
               </div>
               
               <a href="#" class="catalog-item__link">
@@ -610,8 +613,8 @@
 
             <article class="catalog-item">
               <div class="catalog-item__inner">
-                <img class="catalog-item__img" src="img/content/icecream_menthol_267x267.png" alt="Сливочноe мороженое с ментоловым сиропом"  width="267"  height="267">
-                <div class="catalog-item__price">435&#8381;<span>/кг</span></div>
+                <img class="catalog-item__img" src="img/content/icecream_menthol_267x267.png" alt="Сливочноe мороженое с ментоловым сиропом" width="267" height="267">
+                <div class="catalog-item__price">435<svg class="icon-ruble" width="29" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use></svg><span> /кг</span></div>
               </div>
               
               <a href="#" class="catalog-item__link">
@@ -628,8 +631,8 @@
 
             <article class="catalog-item">
               <div class="catalog-item__inner">
-                <img class="catalog-item__img" src="img/content/icecream_dark-choco_267x267.png" alt="Сливочное мороженое с кусочками черного шоколада"  width="267"  height="267">
-                <div class="catalog-item__price">355&#8381;<span>/кг</span></div>
+                <img class="catalog-item__img" src="img/content/icecream_dark-choco_267x267.png" alt="Сливочное мороженое с кусочками черного шоколада" width="267" height="267">
+                <div class="catalog-item__price">355<svg class="icon-ruble" width="29" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use></svg><span> /кг</span></div>
               </div>
               
               <a href="#" class="catalog-item__link">
@@ -646,8 +649,8 @@
             
             <article class="catalog-item">
               <div class="catalog-item__inner">
-                <img class="catalog-item__img" src="img/content/icecream_mint_267x267.png" alt="Сливочное мороженое с мятным сиропом"  width="267"  height="267">
-                <div class="catalog-item__price">420&#8381;<span>/кг</span></div>
+                <img class="catalog-item__img" src="img/content/icecream_mint_267x267.png" alt="Сливочное мороженое с мятным сиропом" width="267" height="267">
+                <div class="catalog-item__price">420<svg class="icon-ruble" width="29" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-ruble"></use></svg><span> /кг</span></div>
               </div>
               
               <a href="#" class="catalog-item__link">
@@ -715,17 +718,17 @@
         <footer class="main-footer  main-footer__catalog  clearfix">
 
           <div class="main-footer__social">
-            <a href="#"  class="social__link" title="Мы в Twitter">
-              <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
+            <a href="#" class="social__link" title="Мы в Twitter">
+              <svg class="social__icon" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
             </a>
-            <a href="#"  class="social__link" title="Мы в Instagram">Instagram
-              <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-inst"></use></svg>
+            <a href="#" class="social__link" title="Мы в Instagram">Instagram
+              <svg class="social__icon" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-inst"></use></svg>
             </a>
-            <a href="#"  class="social__link" title="Мы на Facebook">Facebook
-              <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use></svg>
+            <a href="#" class="social__link" title="Мы на Facebook">Facebook
+              <svg class="social__icon" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use></svg>
             </a>
-            <a href="#"  class="social__link" title="Мы в VK">
-              <svg class="social__icon" width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"></use></svg>
+            <a href="#" class="social__link" title="Мы в VK">
+              <svg class="social__icon" width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-vk"></use></svg>
             </a>
           </div>
 
@@ -735,7 +738,7 @@
               <li>
                 <svg class="main-footer__info-icon" width="15" height="13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-heart"></use></svg>
 
-                <a href="#">Для поставщиков</a>
+                <a href="#"><b>Для поставщиков</b></a>
               </li><!--
            --><li>
                 <a href="#">Наши документы</a>
@@ -752,11 +755,11 @@
 
           <div class="main-footer__copyright">
 
-            <a href="https://htmlacademy.ru"  class="copyright__logo" target="_blank">
+            <a href="https://htmlacademy.ru" class="copyright__logo" target="_blank">
               <img class="copyright__img" src="img/logo/logo-htmlacademy.png" alt="HTML academy" width="108" height="37">
             </a>
 
-            <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>&copy; 2016</p>
+            <p class="copyright__text">Сделано в <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTML Academy </a>&copy; 2016</p>
 
           </div>
 
